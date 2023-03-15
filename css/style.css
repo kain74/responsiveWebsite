@@ -522,5 +522,51 @@ header .nav li a.active {
     font-size: 2em;
   }
 }
+/* 이미지 출처 */
+.img-source {
+  position: fixed;
+  left: 60px;
+  top: 20px;
+  z-index: 10001;
+}
+.img-source span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #fff;
+}
+.img-source .view {
+  display: none;
+  margin-top: 30px;
+  background: #fff;
+  padding: 10px;
+}
+.img-source .view .view-list {
+  position: relative;
+  width: 100%;
+  padding-left: 10px;
+}
+.img-source .view .view-list::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 3px;
+  height: 3px;
+  background: #777;
+}
+.img-source .view .view-list a {
+  color: rgb(226, 42, 42);
+  text-decoration: underline;
+}
+.img-source:hover .view {
+  display: block;
+}
 
 /*# sourceMappingURL=style.css.map */
