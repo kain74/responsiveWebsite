@@ -118,6 +118,12 @@
         lists.forEach((i)=>{
             i.addEventListener('click', active);
         });
+
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.addEventListener('click', function(){
+            header.classList.toggle('active');
+        });
     </script>
 </body>
 </html>

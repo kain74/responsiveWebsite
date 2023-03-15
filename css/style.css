@@ -61,13 +61,6 @@ header .nav li a:hover {
 header .nav li a.active {
   color: #30fe6c;
 }
-header .menuToggle {
-  position: relative;
-  width: 50px;
-  height: 55px;
-  justify-content: center;
-  align-items: center;
-}
 
 #home {
   overflow: hidden;
@@ -331,6 +324,59 @@ header .menuToggle {
 @media (max-width: 720px) {
   header .nav {
     display: none;
+  }
+  header .menuToggle {
+    position: relative;
+    display: flex;
+    width: 36px;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  header .menuToggle::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transform: translateY(-13px);
+    transition: 0.5s;
+    box-shadow: 0 13px #fff;
+  }
+  header .menuToggle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transform: translateY(13px);
+    transition: 0.5s;
+  }
+  header.active .menuToggle::before {
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 #fff;
+  }
+  header.active .menuToggle::after {
+    transform: translateY(0px) rotate(315deg);
+  }
+  header.active .nav {
+    position: fixed;
+    left: 0;
+    top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 55px);
+    background: rgba(50, 50, 50, 0.95);
+    backdrop-filter: blur(20px);
+    gap: 20px;
+    z-index: 10000;
   }
   #home {
     display: block;
