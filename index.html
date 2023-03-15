@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reponsive Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <header>
+        <a href="#none" class="logo" role="button">Logo</a>
+        <div class="menuToggle"></div>
+        <ul class="nav">
+            <li><a href="#home" role="button" class="active">Home</a></li>
+            <li><a href="#service" role="button">Service</a></li>
+            <li><a href="#portfolio" role="button">Portfolio</a></li>
+            <li><a href="#contact" role="button">Contact</a></li>
+        </ul>
+    </header>
+    <section id="home">
+        <div class="content">
+            <h2>IPHON</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam deserunt libero maiores quam beatae illo adipisci expedita magnam dolorem. Ipsum nulla recusandae excepturi cum adipisci perspiciatis fugit eaque sed cupiditate.</p>
+            <a href="#none" role="button" class="btn-more">More</a>
+        </div>
+        <p class="icon-area"><span class="material-symbols-outlined">phone_iphone</span><i></i></p>
+    </section>
+    <section id="service">
+        <div class="sec-text">
+            <h2>iPhone 14 Pro</h2>
+            <p>Pro camera system 48MP Main Ultra Wide Telephoto Photonic Engine<br>for incredible detail and color Autofocus on TrueDepth front camera</p>
+        </div>
+        <div class="content">
+            <div class="servece-bx">
+                <span class="material-symbols-outlined">camera_video</span>
+                <p>Camera Video</p>
+            </div>
+            <div class="servece-bx">
+                <span class="material-symbols-outlined">rss_feed</span>
+                <p>Rss Feed</p>
+            </div>
+            <div class="servece-bx">
+                <span class="material-symbols-outlined">lte_plus_mobiledata</span>
+                <p>Lte_plus Mobiledata</p>
+            </div>
+            <div class="servece-bx">
+                <span class="material-symbols-outlined">security</span>
+                <p>Security</p>
+            </div>
+        </div>
+        <div class="txt_c">
+            <a href="#none" role="button" class="btn-more">More</a>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="sec-text">
+            <h2>My Photo Collection</h2>
+            <p>Pro camera system 48MP Main Ultra Wide Telephoto Photonic Engine<br>for incredible detail and color Autofocus on TrueDepth front camera</p>
+        </div>
+        <div class="content">
+            <div class="img-bx">
+                <img src="../img/photo01.jpg" alt="">
+            </div>
+            <div class="img-bx">
+                <img src="../img/photo02.jpg" alt="">
+            </div>
+            <div class="img-bx">
+                <img src="../img/photo03.jpg" alt="">
+            </div>
+            <div class="img-bx">
+                <img src="../img/photo04.jpg" alt="">
+            </div>
+            <div class="img-bx">
+                <img src="../img/photo05.jpg" alt="">
+            </div>
+            <div class="img-bx">
+                <img src="../img/photo06.jpg" alt="">
+            </div>
+        </div>
+        <div class="txt_c">
+            <a href="#none" role="button" class="btn-more">More</a>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="sec-text">
+            <h2>Ways To Contact Me</h2>
+            <p>Pro camera system 48MP Main Ultra Wide Telephoto Photonic Engine<br>for incredible detail and color Autofocus on TrueDepth front camera</p>
+        </div>
+        <div class="content">
+            <a href="#none" role="button">
+                <span class="material-symbols-outlined">mail</span>kain7402@naver.com
+            </a>
+            <a href="#none" role="button">
+                <span class="material-symbols-outlined">phone_in_talk</span>010-5023-0083
+            </a>
+            <a href="#none" role="button">
+                <span class="material-symbols-outlined">sms</span>SMS
+            </a>
+            <a href="#none" role="button">
+                <span class="material-symbols-outlined">whatshot</span>whatsApp
+            </a>
+        </div>
+        <div class="txt_c">
+            <p class="copyrights">copyright ⓒ 2023 <a href="https://kain74.github.io/kainStudio/" target="_blank" title="새창열림">Kain74 Studio</a>. All Right Reserved</p>
+        </div>
+    </section>
+    <script>
+        let lists = document.querySelectorAll('.nav li a');
+        function active(){
+            lists.forEach((i) => {
+                    i.classList.remove('active');
+                    this.classList.add('active');
+                }
+            );
+        }
+        lists.forEach((i)=>{
+            i.addEventListener('click', active);
+        });
+    </script>
+</body>
+</html>
