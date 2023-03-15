@@ -51,8 +51,8 @@ header .nav li a {
   display: flex;
   align-items: center;
   height: 100%;
-  color: #fff;
   padding: 0 20px;
+  color: #fff;
   transition: 0.5s;
 }
 header .nav li a:hover {
