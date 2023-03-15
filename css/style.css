@@ -294,6 +294,11 @@ header .nav li a.active {
   color: #30fe6c;
 }
 
+@media (max-width: 1200px) {
+  #contact .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (max-width: 1024px) {
   #home {
     padding: 100px 50px;
@@ -304,6 +309,16 @@ header .nav li a.active {
   #service .content {
     grid-template-columns: repeat(2, 1fr);
     margin: 40px 0;
+  }
+  #portfolio {
+    padding: 100px 50px;
+  }
+  #portfolio .content {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 40px 0;
+  }
+  #contact {
+    padding: 100px 50px;
   }
 }
 @media (max-width: 720px) {
@@ -359,6 +374,19 @@ header .nav li a.active {
   }
   #service .content .servece-bx span {
     font-size: 70px;
+  }
+  #portfolio {
+    padding: 100px 30px;
+  }
+  #portfolio .content {
+    grid-gap: 20px;
+    margin: 40px 0;
+  }
+  #contact {
+    padding: 100px 30px;
+  }
+  #contact .content {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media (max-width: 320px) {
@@ -417,6 +445,22 @@ header .nav li a.active {
   }
   #service .content .servece-bx span {
     font-size: 70px;
+  }
+  #portfolio {
+    padding: 50px 20px;
+  }
+  #portfolio .content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10;
+  }
+  #portfolio .content .servece-bx {
+    padding: 15px;
+  }
+  #portfolio .content .servece-bx span {
+    font-size: 70px;
+  }
+  #contact {
+    padding: 50px 20px;
   }
   .sec-text h2 {
     font-size: 2em;
