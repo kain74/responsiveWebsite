@@ -45,6 +45,13 @@ header{
             }
         }
     }
+    .menuToggle{
+        position: relative;
+        width: 50px;
+        height: 55px;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 #home{
@@ -298,6 +305,12 @@ header{
 }
 
 @media (max-width: 720px){
+    header{
+        .nav{
+            display: none;
+        }
+    }
+   
     #home{
         display: block;
         padding: 100px 30px;

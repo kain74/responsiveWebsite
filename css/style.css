@@ -61,6 +61,13 @@ header .nav li a:hover {
 header .nav li a.active {
   color: #30fe6c;
 }
+header .menuToggle {
+  position: relative;
+  width: 50px;
+  height: 55px;
+  justify-content: center;
+  align-items: center;
+}
 
 #home {
   overflow: hidden;
@@ -322,6 +329,9 @@ header .nav li a.active {
   }
 }
 @media (max-width: 720px) {
+  header .nav {
+    display: none;
+  }
   #home {
     display: block;
     padding: 100px 30px;
